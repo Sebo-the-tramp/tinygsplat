@@ -45,7 +45,7 @@ conda env create -f environment.yml
 For now there are 2 notebooks in the repository:
 
 1. tinysplat.ipynb
-2. 2D_Gaussian_Splatting.ipynb from the original repository [link](
+2. 2D_Gaussian_Splatting.ipynb from the original repository [link](https://github.com/OutofAi/2D-Gaussian-Splatting)
 
 
 ## Results
