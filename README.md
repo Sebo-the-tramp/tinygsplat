@@ -12,12 +12,12 @@ I am working on a MacbookPro M2 - 2023 therefore I will leave here the benchmark
 
 <!-- Create a table  for benchmark -->
 
-| framework          | accelerator | time (s) | number of iterations  | number of gaussian splats |
-|--------------------|-------------|----------|-----------------------|---------------------------|
-| Tinygrad (no JIT)  | MPS         | 118      | 1000                  | 1000                      |
-| Tinygrad (JIT)     | MPS         | 88       | 1000                  | 1000                      |
-| Pytorch            | CPU         | 10000    | 1000                  | 1000                      |
-| Pytorch            | MPS         | 1000     | 1000                  | 1000                      |
+| framework          | accelerator | time (min) | number of iterations  | number of gaussian splats |
+|--------------------|-------------|------------|-----------------------|---------------------------|
+| Tinygrad (no JIT)  | MPS         | 1.58 min   | 1000                  | 1000                      |
+| Tinygrad (JIT)     | MPS         | 1.18 min   | 1000                  | 1000                      |
+| Pytorch            | CPU         | > 50 mins  | 1000                  | 1000 + 4000(backup)       |
+| Pytorch            | MPS         | > 50 mins  | 1000                  | 1000 + 4000(backup)       |
 
 ## Installation
 
