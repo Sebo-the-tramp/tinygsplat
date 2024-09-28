@@ -8,7 +8,7 @@ This repository is the collection of different training script (mostly notebooks
 ## Benchmark
 
 I am working on a MacbookPro M2 - 2023 therefore I will leave here the benchmarks of the time it takes for each Gaussian Splat to train:
-
+I will also test on CUDA both torch and tinygrad to see the difference in time.
 
 <!-- Create a table  for benchmark -->
 
@@ -16,8 +16,8 @@ I am working on a MacbookPro M2 - 2023 therefore I will leave here the benchmark
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
-| Pytorch            | CPU         | > 50 mins  |           | 1000                  | 1000 + 4000(backup)       |
-| Pytorch            | MPS         | > 50 mins  |           | 1000                  | 1000 + 4000(backup)       |
+| Pytorch            | CPU         | ? | ? |  ? | 1000 + 4000(backup)       |
+| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                  | 1000 + 4000(backup)       |
 
 ## Installation
 
@@ -56,6 +56,7 @@ For now there are 2 notebooks in the repository:
 
 ### Torch with densification
 
+![](./assets/output_torch_densified_400_epochs.png)
 
 ## TODO:
 
