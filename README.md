@@ -52,7 +52,7 @@ For now there are 2 notebooks in the repository:
 
 ### Tinygrad no densification
 
-![](./images/output_tinygrad_no_densification.png)
+![](./assets/output_tinygrad_no_densification.png)
 
 ### Torch with densification
 
