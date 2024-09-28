@@ -46,3 +46,19 @@ For now there are 2 notebooks in the repository:
 
 1. tinysplat.ipynb
 2. 2D_Gaussian_Splatting.ipynb from the original repository [link](
+
+
+## Results
+
+### Tinygrad no densification
+
+![](./images/output_tinygrad_no_densification.png)
+
+### Torch with densification
+
+
+## TODO:
+
+- [ ] Densify the Gaussians in Tinygrad
+- [ ] Make it more efficient in TinyGrad
+- [ ] Implement the Gaussian Splatting in JAX (?)
