@@ -18,6 +18,9 @@ I am working on a MacbookPro M2 - 2023 therefore I will leave here the benchmark
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
 | Pytorch            | CPU         | > 50 mins  |           | 1000                  | 1000 + 4000(backup)       |
 | Pytorch            | MPS         | > 50 mins  |           | 1000                  | 1000 + 4000(backup)       |
+| Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
+| Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
+
 
 ## Installation
 
