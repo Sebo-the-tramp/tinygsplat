@@ -12,12 +12,17 @@ I am working on a MacbookPro M2 - 2023 therefore I will leave here the benchmark
 
 <!-- Create a table  for benchmark -->
 
+TEST on MacBook Pro 2023 16GB RAM
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
 | Pytorch            | CPU         | > 50 mins  |           | 1000                  | 1000 + 4000(backup)       |
 | Pytorch            | MPS         | > 50 mins  |           | 1000                  | 1000 + 4000(backup)       |
+
+TEST on RTX-3070 
+| framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
+|--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
 
