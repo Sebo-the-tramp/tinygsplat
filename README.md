@@ -1,5 +1,7 @@
 # TinySplat
 
+![](./assets/output_tinygrad_no_densification.png)
+
 This repository is the collection of different training script (mostly notebooks) to train simple Gaussians splats from 2D images for 2 reasons:
 
 1. Understand the basic concepts of Gaussian splatting hands on
