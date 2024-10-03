@@ -74,3 +74,5 @@ For now there are 2 notebooks in the repository:
 - [ ] Densify the Gaussians in Tinygrad
 - [ ] Make it more efficient in TinyGrad
 - [ ] Implement the Gaussian Splatting in JAX (?)
+
+
