@@ -1,5 +1,7 @@
 # TinySplat
 
+A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It is functional for now, but I am trying to add more functionalities such as densification and pruning. One day I might be cracked enough to get the 3D as well and maybe write some CUDA kernels/
+
 ![](./assets/output_tinygrad_no_densification.png)
 
 This repository is the collection of different training script (mostly notebooks) to train simple Gaussians splats from 2D images for 2 reasons:
