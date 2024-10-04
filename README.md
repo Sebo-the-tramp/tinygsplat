@@ -1,5 +1,9 @@
 # TinySplat
 
+A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It is functional for now, but I am trying to add more functionalities such as densification and pruning. One day I might be cracked enough to get the 3D as well and maybe write some CUDA kernels/
+
+![](./assets/output_tinygrad_no_densification.png)
+
 This repository is the collection of different training script (mostly notebooks) to train simple Gaussians splats from 2D images for 2 reasons:
 
 1. Understand the basic concepts of Gaussian splatting hands on
@@ -12,12 +16,20 @@ I will also test on CUDA both torch and tinygrad to see the difference in time.
 
 <!-- Create a table  for benchmark -->
 
+TEST on MacBook Pro 2023 16GB RAM
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
 | Pytorch            | CPU         | ? | ? |  ? | 1000 + 4000(backup)       |
 | Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                  | 1000 + 4000(backup)       |
+
+TEST on RTX-3070 
+| framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
+|--------------------|-------------|------------|-----------|-----------------------|---------------------------|
+| Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
+| Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
+
 
 ## Installation
 
@@ -63,3 +75,5 @@ For now there are 2 notebooks in the repository:
 - [ ] Densify the Gaussians in Tinygrad
 - [ ] Make it more efficient in TinyGrad
 - [ ] Implement the Gaussian Splatting in JAX (?)
+
+
