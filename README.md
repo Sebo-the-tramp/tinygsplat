@@ -76,4 +76,7 @@ For now there are 2 notebooks in the repository:
 - [ ] Make it more efficient in TinyGrad
 - [ ] Implement the Gaussian Splatting in JAX (?)
 
+## CREDITS
+
+- 2D Gaussian Splatting original implementation: (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting]
 
