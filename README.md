@@ -1,35 +1,11 @@
 # TinySplat
 
-A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It is functional for now, but I am trying to add more functionalities such as densification and pruning. One day I might be cracked enough to get the 3D as well and maybe write some CUDA kernels/
+A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It works. I plan to add more features, see (TODO section)[# TODO]
 
-![](./assets/output_tinygrad_no_densification.png)
+I started this for:
 
-This repository is the collection of different training script (mostly notebooks) to train simple Gaussians splats from 2D images for 2 reasons:
-
-1. Understand the basic concepts of Gaussian splatting hands on
-2. Implement the Gaussian Splatting in Tinygrad and get hands-on experience
-
-## Benchmark
-
-I am working on a MacbookPro M2 - 2023 therefore I will leave here the benchmarks of the time it takes for each Gaussian Splat to train:
-I will also test on CUDA both torch and tinygrad to see the difference in time.
-
-<!-- Create a table  for benchmark -->
-
-TEST on MacBook Pro 2023 16GB RAM
-| framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
-|--------------------|-------------|------------|-----------|-----------------------|---------------------------|
-| Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
-| Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
-| Pytorch            | CPU         | ?          | ?         |  ?                    | 1000 + 4000(backup)       |
-| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 1000 + 4000(backup)       |
-
-TEST on RTX-3070 
-| framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
-|--------------------|-------------|------------|-----------|-----------------------|---------------------------|
-| Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
-| Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
-
+1. Learn Gaussian Splattin
+2. Learn [tinygrad](https://docs.tinygrad.org/)
 
 ## Installation
 
@@ -46,8 +22,24 @@ conda env create -f environment.yaml
 >%env DISABLE_COMPILER_CACHE=1
 >```
 
+## Benchmark
 
-For more information head to the tinygrad Documentation: [link](https://docs.tinygrad.org/)
+> MacBook Pro 2023 16GB RAM M2
+| framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
+|--------------------|-------------|------------|-----------|-----------------------|---------------------------|
+| Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
+| Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
+| Tinygrad (JIT)     | MPS         | 13.29 min  | 0.012699  | 2000                  | 1000 + 3000               |
+| Pytorch            | CPU         | ?          | ?         |  ?                    | 1000 + 4000(backup)       |
+| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 1000 + 4000(backup)       |
+
+> RTX-3070 - AMD Ryzen 7 3800X 8-Core Processor - 32GB RAM
+| framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
+|--------------------|-------------|------------|-----------|-----------------------|---------------------------|
+| Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
+| Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
+| Pytorch            | CPU         | ?          | ?         |  ?                    | 1000 + 4000(backup)       |
+| Pytorch            | MPS         | ?          | ?         | 1000                  | 1000 + 4000(backup)       |
 
 ## Usage
 
@@ -64,7 +56,7 @@ This repository is divided into subfolder each containing its own notebooks;
 
 ### Tinygrad WITH densification
 
-![](./assets/output_tinygrad_no_densification.png)
+![](./assets/outout_tinygrad_densified_2001_epochs.png)
 
 ### Torch WITH densification
 
@@ -79,5 +71,5 @@ This repository is divided into subfolder each containing its own notebooks;
 
 ## CREDITS
 
-- 2D Gaussian Splatting original implementation: (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting]
-- GSplat implementation: (amazing guys)[https://github.com/nerfstudio-project/gsplat]
+- 2D Gaussian Splatting original implementation: [OutofAi](https://github.com/OutofAi/2D-Gaussian-Splatting)
+- GSplat implementation: [amazing guys](https://github.com/nerfstudio-project/gsplat)
