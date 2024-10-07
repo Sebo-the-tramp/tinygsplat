@@ -72,7 +72,8 @@ For now there are 2 notebooks in the repository:
 
 ## TODO:
 
-- [ ] Densify the Gaussians in Tinygrad
+- [X] Densify the Gaussians in Tinygrad
+- [ ] Compare the speed with [Gsplat](https://docs.gsplat.studio/main/examples/image.html)
 - [ ] Make it more efficient in TinyGrad
 - [ ] Implement the Gaussian Splatting in JAX (?)
 
