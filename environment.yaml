@@ -14,5 +14,6 @@ dependencies:
   - requests
   - pyyaml
   - ipykernel
-  - git+https://github.com/tinygrad/tinygrad.git
   - scipy
+pip:
+  - git+https://github.com/tinygrad/tinygrad.git
