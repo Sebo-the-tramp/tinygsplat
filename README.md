@@ -25,6 +25,7 @@ conda env create -f environment.yaml
 ## Benchmark
 
 > MacBook Pro 2023 16GB RAM M2
+
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
@@ -34,6 +35,7 @@ conda env create -f environment.yaml
 | Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 1000 + 4000(backup)       |
 
 > RTX-3070 - AMD Ryzen 7 3800X 8-Core Processor - 32GB RAM
+
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
