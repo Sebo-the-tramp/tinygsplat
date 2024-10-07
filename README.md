@@ -34,14 +34,18 @@ TEST on RTX-3070
 ## Installation
 
 Installation is not trivial on MacOS if you are using conda. 
+
+```bash
+%env METAL_XCODE=1
+%env DISABLE_COMPILER_CACHE=1
+```
+
 Conda is broken for tinygrad, therefore use .venv follow this link if you want to know more about it: [link](https://github.com/tinygrad/tinygrad/issues/2226)
 
 For installing Tinygrad, all you have to do is run the following:
 
 ```bash 
-git clone https://github.com/tinygrad/tinygrad.git
-cd tinygrad
-python3 -m pip install -e .
+python3 -m pip install git+https://github.com/tinygrad/tinygrad.git
 ```
 
 For more information head to the tinygrad Documentation: [link](https://docs.tinygrad.org/)

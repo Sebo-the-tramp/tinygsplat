@@ -1,2 +1,10 @@
 tinysplat
 tinygrad
+
+/tinygrad_splat/tinysplat_min_2_gaussian_filter.ipynb
+
+/tinygrad_splat/tinysplat_min_2_rough.ipynb
+
+/tinygrad_splat/tinysplat_min_BW.ipynb
+
+/tinygrad_splat/tinysplat_min_MCMC.ipynb

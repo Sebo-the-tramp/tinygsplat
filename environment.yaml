@@ -1,4 +1,4 @@
-name: 2d_gaussian_splatting
+name: tinysplat
 channels:
   - conda-forge
   - defaults
@@ -14,3 +14,5 @@ dependencies:
   - requests
   - pyyaml
   - ipykernel
+  - git+https://github.com/tinygrad/tinygrad.git
+  - scipy
