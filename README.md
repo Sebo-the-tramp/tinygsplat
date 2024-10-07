@@ -21,8 +21,8 @@ TEST on MacBook Pro 2023 16GB RAM
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
-| Pytorch            | CPU         | ? | ? |  ? | 1000 + 4000(backup)       |
-| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                  | 1000 + 4000(backup)       |
+| Pytorch            | CPU         | ?          | ?         |  ?                    | 1000 + 4000(backup)       |
+| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 1000 + 4000(backup)       |
 
 TEST on RTX-3070 
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
@@ -33,36 +33,29 @@ TEST on RTX-3070
 
 ## Installation
 
-Installation is not trivial on MacOS if you are using conda. 
+To install all the necessary libraries to run all the examples use:
 
 ```bash
-%env METAL_XCODE=1
-%env DISABLE_COMPILER_CACHE=1
+conda env create -f environment.yaml
 ```
 
-Conda is broken for tinygrad, therefore use .venv follow this link if you want to know more about it: [link](https://github.com/tinygrad/tinygrad/issues/2226)
+> [!IMPORTANT]  
+> There is a known bug on MacOS and conda (see this (issue)[https://github.com/tinygrad/tinygrad/issues/2226] for details), please always use the following env variables before any notebook or when running commands. 
 
-For installing Tinygrad, all you have to do is run the following:
+>```bash
+>%env METAL_XCODE=1
+>%env DISABLE_COMPILER_CACHE=1
+>```
 
-```bash 
-python3 -m pip install git+https://github.com/tinygrad/tinygrad.git
-```
 
 For more information head to the tinygrad Documentation: [link](https://docs.tinygrad.org/)
 
-To install the other dependencies, to run the original notebooks, run the following:
-
-```bash
-conda env create -f environment.yml
-```
-
 ## Usage
 
-For now there are 2 notebooks in the repository:
+This repository is divided into subfolder each containing its own notebooks;
 
-1. tinysplat.ipynb
-2. 2D_Gaussian_Splatting.ipynb from the original repository [link](https://github.com/OutofAi/2D-Gaussian-Splatting)
-
+- for tinygrad refer to tinysplat
+- for torch based refer to torchsplat (credits to (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting])
 
 ## Results
 
@@ -70,7 +63,11 @@ For now there are 2 notebooks in the repository:
 
 ![](./assets/output_tinygrad_no_densification.png)
 
-### Torch with densification
+### Tinygrad WITH densification
+
+![](./assets/output_tinygrad_no_densification.png)
+
+### Torch WITH densification
 
 ![](./assets/output_torch_densified_400_epochs.png)
 
@@ -84,4 +81,4 @@ For now there are 2 notebooks in the repository:
 ## CREDITS
 
 - 2D Gaussian Splatting original implementation: (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting]
-
+- GSplat implementation: (amazing guys)[https://github.com/nerfstudio-project/gsplat]
