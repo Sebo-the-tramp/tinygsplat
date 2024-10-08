@@ -58,7 +58,7 @@ This repository is divided into subfolder each containing its own notebooks;
 
 ### Tinygrad no densification
 
-!()[./assets/output_tinygrad_no_densification.png]
+![](./assets/output_tinygrad_no_densification.png)
 
 ### Tinygrad WITH STANDARD densification
 
