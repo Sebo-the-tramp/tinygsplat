@@ -44,6 +44,9 @@ conda env create -f environment.yaml
 | Pytorch            | MPS         | ?          | ?         | 1000                  | 1000 + 4000(backup)       |
 | Gsplat             | GPU         | 0.11 mins  | 0.006781  | 5000                  | 5000                      |
 
+> [!NOTE]  
+> I think there is some problem with Gsplat process...
+
 ## Usage
 
 This repository is divided into subfolder each containing its own notebooks;
