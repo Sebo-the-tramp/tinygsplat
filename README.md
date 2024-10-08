@@ -74,6 +74,7 @@ This repository is divided into subfolder each containing its own notebooks;
 
 ### GSPLAT
 
+![](./assets/output_gsplat.png)
 
 ## TODO:
 
