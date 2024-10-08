@@ -2,7 +2,7 @@
 
 A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It works. I plan to add more features, see [TODO](#todo)
 
-I started this for:
+I started this to:
 
 1. Learn Gaussian Splatting
 2. Learn [tinygrad](https://docs.tinygrad.org/)
