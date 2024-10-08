@@ -62,15 +62,15 @@ This repository is divided into subfolder each containing its own notebooks;
 
 ### Tinygrad WITH STANDARD densification
 
-!()[./assets/outout_tinygrad_densified_2001_epochs.png]
+![](./assets/outout_tinygrad_densified_2001_epochs.png)
 
 ### Tinygrad WITH gaussian blur densification
 
-!()[./assets/output_tinygrad_densification_gaussian_blur.png]
+![](./assets/output_tinygrad_densification_gaussian_blur.png)
 
 ### Torch WITH densification
 
-!()[./assets/output_torch_densified_400_epochs.png]
+![](./assets/output_torch_densified_400_epochs.png)
 
 ### GSPLAT
 
