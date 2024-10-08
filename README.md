@@ -1,6 +1,6 @@
 # TinySplat
 
-A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It works. I plan to add more features, see (TODO section)[## TODO]
+A simple implementation of Gaussian splatting with [tinygrad](https://github.com/tinygrad/tinygrad). It works. I plan to add more features, see (TODO section)[#TODO]
 
 I started this for:
 
