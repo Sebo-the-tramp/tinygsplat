@@ -42,27 +42,35 @@ conda env create -f environment.yaml
 | Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
 | Pytorch            | CPU         | ?          | ?         |  ?                    | 1000 + 4000(backup)       |
 | Pytorch            | MPS         | ?          | ?         | 1000                  | 1000 + 4000(backup)       |
+| Gsplat             | GPU         | 0.11 mins  | 0.006781  | 5000                  | 5000                      |
 
 ## Usage
 
 This repository is divided into subfolder each containing its own notebooks;
 
 - for tinygrad refer to tinysplat
-- for torch based refer to torchsplat (credits to (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting])
+- for torch based refer to torchsplat - credits to (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting])
 
 ## Results
 
 ### Tinygrad no densification
 
-![](./assets/output_tinygrad_no_densification.png)
+!()[./assets/output_tinygrad_no_densification.png]
 
-### Tinygrad WITH densification
+### Tinygrad WITH STANDARD densification
 
-![](./assets/outout_tinygrad_densified_2001_epochs.png)
+!()[./assets/outout_tinygrad_densified_2001_epochs.png]
+
+### Tinygrad WITH gaussian blur densification
+
+!()[./assets/output_tinygrad_densification_gaussian_blur.png]
 
 ### Torch WITH densification
 
-![](./assets/output_torch_densified_400_epochs.png)
+!()[./assets/output_torch_densified_400_epochs.png]
+
+### GSPLAT
+
 
 ## TODO:
 
