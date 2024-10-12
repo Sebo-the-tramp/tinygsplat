@@ -42,9 +42,9 @@ def main(cfg: DictConfig):
         print("c2w", viewmat[:3, :4])
         print("K", K)
         
-        fx = fy = 0.5 * width  
-        cx = width / 2
-        cy = height / 2
+        # fx = fy = 0.5 * width  
+        # cx = width / 2
+        # cy = height / 2
         
         # K = np.array([[fx, 0, cx], [0, fy, cy], [0, 0, 1]])
         
