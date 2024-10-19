@@ -28,20 +28,21 @@ conda env create -f environment.yaml
 
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
-| Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
+| Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 13.29 min  | 0.013182  | 2000                  | 5000                      |
-| Pytorch            | CPU         | ∞          | ∞         | ∞                     | 1000 + 4000(backup)       |
-| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 1000 + 4000(backup)       |
+| Tinygrad (no JIT)  | MPS         | 13.29 min  | 0.018872  | 2000                  | 5000                      |
+| Pytorch            | CPU         | ∞          | ∞         | 2000                  | 5000                      |
+| Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 5000                      |
 
 > RTX-3070 - AMD Ryzen 7 3800X 8-Core Processor - 32GB RAM
 
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
-| Pytorch            | GPU         | 10.17 mins | 0.021133  | 1000                  | 1000 + 3000(backup)       |
 | Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
-| Tinygrad (no JIT)  | GPU         | 4.07 mins  | 0.034477  | 2000                  | 1000 + 3000               |
-| Pytorch            | GPU         | OOM        | -         | 2000                  | 1000 + 3000(backup)       |
+| Tinygrad (no JIT)  | GPU         | 4.07 mins  | 0.034477  | 2000                  | 5000                      |
+| Pytorch            | GPU         | 10.17 mins | 0.021133  | 1000                  | 5000                      |
+| Pytorch            | GPU         | OOM        | -         | 2000                  | 5000                      |
 | Gsplat             | GPU         | 0.11 mins  | 0.006781  | 2000                  | 5000                      |
 
 > [!NOTE]  
@@ -51,7 +52,7 @@ conda env create -f environment.yaml
 
 This repository is divided into subfolder each containing its own notebooks;
 
-- for tinygrad refer to tinysplat
+- for tinygrad refer to tinysplat_2D
 - for torch based refer to torchsplat - credits to [OutofAi](https://github.com/OutofAi/2D-Gaussian-Splatting)
 
 ## Results
