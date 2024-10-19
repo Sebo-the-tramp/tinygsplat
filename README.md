@@ -40,7 +40,7 @@ conda env create -f environment.yaml
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
 | Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
-| Pytorch            | GPU         | ?          | ?         | 1000                  | 1000 + 4000(backup)       |
+| Pytorch            | GPU         | 10.17 mins | 0.021133  | 1000                  | 1000 + 4000(backup)       |
 | Gsplat             | GPU         | 0.11 mins  | 0.006781  | 5000                  | 5000                      |
 
 > [!NOTE]  
