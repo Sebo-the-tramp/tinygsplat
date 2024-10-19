@@ -52,7 +52,7 @@ conda env create -f environment.yaml
 This repository is divided into subfolder each containing its own notebooks;
 
 - for tinygrad refer to tinysplat
-- for torch based refer to torchsplat - credits to (OutofAi)[https://github.com/OutofAi/2D-Gaussian-Splatting])
+- for torch based refer to torchsplat - credits to [OutofAi](https://github.com/OutofAi/2D-Gaussian-Splatting))
 
 ## Results
 
