@@ -38,10 +38,11 @@ conda env create -f environment.yaml
 
 | framework          | accelerator | time (min) | SSIM loss | number of iterations  | number of gaussian splats |
 |--------------------|-------------|------------|-----------|-----------------------|---------------------------|
+| Pytorch            | GPU         | 10.17 mins | 0.021133  | 1000                  | 1000 + 3000(backup)       |
 | Tinygrad (no JIT)  | GPU         | 1.17 mins  | 0.034477  | 1000                  | 1000                      |
-| Tinygrad (JIT)     | GPU         | 4.07 mins  | 0.034477  | 1000                  | 1000                      |
-| Pytorch            | GPU         | 10.17 mins | 0.021133  | 1000                  | 1000 + 4000(backup)       |
-| Gsplat             | GPU         | 0.11 mins  | 0.006781  | 5000                  | 5000                      |
+| Tinygrad (no JIT)  | GPU         | 4.07 mins  | 0.034477  | 2000                  | 1000 + 3000               |
+| Pytorch            | GPU         | OOM        | -         | 2000                  | 1000 + 3000(backup)       |
+| Gsplat             | GPU         | 0.11 mins  | 0.006781  | 2000                  | 5000                      |
 
 > [!NOTE]  
 > I think there is some problem with Gsplat process...
