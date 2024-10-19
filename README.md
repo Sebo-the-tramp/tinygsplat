@@ -16,7 +16,7 @@ conda env create -f environment.yaml
 ```
 
 > [!IMPORTANT]  
-> There is a known bug on MacOS and conda (see this (issue)[https://github.com/tinygrad/tinygrad/issues/2226] for details), please always use the following env variables before any notebook or when running commands.
+> There is a known bug on MacOS and conda (see this [issue](https://github.com/tinygrad/tinygrad/issues/2226) for details), please always use the following env variables before any notebook or when running commands.
 >```bash
 >%env METAL_XCODE=1
 >%env DISABLE_COMPILER_CACHE=1
