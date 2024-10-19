@@ -83,6 +83,7 @@ This repository is divided into subfolder each containing its own notebooks;
 - [X] Compare the speed with [Gsplat](https://docs.gsplat.studio/main/examples/image.html)
 - [ ] Check if Gsplat is correctly configured!
 - [ ] Make it more efficient in TinyGrad -> use DEBUG=4
+- [ ] parallelize the splatting process
 
 ## CREDITS
 
