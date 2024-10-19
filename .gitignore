@@ -1,7 +1,8 @@
-/tinysplat/tinysplat_min_2_gaussian_filter.ipynb
-/tinysplat/tinysplat_min_2_rough.ipynb
-/tinysplat/tinysplat_min_BW.ipynb
-/tinysplat/tinysplat_min_MCMC.ipynb
+/tinysplat_2D/tinysplat_min_2_gaussian_filter.ipynb
+/tinysplat_2D/tinysplat_min_2_rough.ipynb
+/tinysplat_2D/tinysplat_min_BW.ipynb
+/tinysplat_2D/tinysplat_min_MCMC.ipynb
+/tinysplat_2D/gsplat.py
 
 /assets/Truck.ply
 /assets/Truck/*
