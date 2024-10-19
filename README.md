@@ -31,7 +31,7 @@ conda env create -f environment.yaml
 | Tinygrad (JIT)     | MPS         | 1.18 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (no JIT)  | MPS         | 1.58 min   | 0.033394  | 1000                  | 1000                      |
 | Tinygrad (JIT)     | MPS         | 13.29 min  | 0.013182  | 2000                  | 5000                      |
-| Tinygrad (no JIT)  | MPS         | 13.29 min  | 0.018872  | 2000                  | 5000                      |
+| Tinygrad (no JIT)  | MPS         | 10.17 min  | 0.018872  | 2000                  | 5000                      |
 | Pytorch            | CPU         | ∞          | ∞         | 2000                  | 5000                      |
 | Pytorch            | MPS         | 23.54 mins | 0.031974  | 400                   | 5000                      |
 
